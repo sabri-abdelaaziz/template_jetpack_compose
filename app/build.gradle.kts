@@ -33,6 +33,10 @@ android {
             )
         }
     }
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
     kotlinOptions {
         jvmTarget = "1.8"
     }
@@ -96,6 +100,10 @@ dependencies {
     // implementation(libs.accompanist.systemui.controller)
 //splash screen
     implementation(libs.androidx.core.splashscreen)
+
+    /// pager implementation
+    implementation(libs.accompanist.pager)
+    implementation(libs.accompanist.pager.indicators)
 }
 kapt {
     correctErrorTypes = true

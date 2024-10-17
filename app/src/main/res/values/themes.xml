@@ -4,7 +4,7 @@
         <item name="windowSplashScreenBackground">@color/white</item>
         <item name="windowSplashScreenAnimationDuration">1000</item>
         <item name="android:duration">500</item>
-        <item name="windowSplashScreenAnimatedIcon">@drawable/common_full_open_on_phone</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/monlogo</item>
         <item name="postSplashScreenTheme">@style/Theme.Template_jetpackcompose</item>
     </style>
     <style name="Theme.Template_jetpackcompose" parent="android:Theme.Material.Light.NoActionBar" />

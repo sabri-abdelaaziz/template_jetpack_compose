@@ -13,6 +13,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
+import androidx.navigation.compose.rememberNavController
+import com.wagdev.template_jetpackcompose.core.controllers.Navigations
 import com.wagdev.template_jetpackcompose.ui.theme.Template_jetpackcomposeTheme
 
 class MainActivity : ComponentActivity() {
@@ -25,28 +27,12 @@ class MainActivity : ComponentActivity() {
         setContent {
             Template_jetpackcomposeTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
+                    Navigations(
+                        navController = rememberNavController(),
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
             }
         }
-    }
-}
-
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    Template_jetpackcomposeTheme {
-        Greeting("Android")
     }
 }
