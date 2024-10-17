@@ -1,5 +1,6 @@
 package com.wagdev.template_jetpackcompose.core.presentation
 
+import BottomSheetScreen
 import android.annotation.SuppressLint
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -54,7 +55,6 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.res.stringResource
 import androidx.navigation.NavController
 import com.wagdev.template_jetpackcompose.R
-import com.wagdev.template_jetpackcompose.core.presentation.companents.BottomSheetScreen
 import com.wagdev.template_jetpackcompose.core.presentation.companents.DrawerContent
 import com.wagdev.template_jetpackcompose.core.presentation.companents.HomeScreen
 import com.wagdev.template_jetpackcompose.core.presentation.companents.ProfessionalCard
