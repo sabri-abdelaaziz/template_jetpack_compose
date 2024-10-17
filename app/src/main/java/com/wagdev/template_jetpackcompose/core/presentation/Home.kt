@@ -54,9 +54,12 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.res.stringResource
 import androidx.navigation.NavController
 import com.wagdev.template_jetpackcompose.R
+import com.wagdev.template_jetpackcompose.core.presentation.companents.BottomSheetScreen
 import com.wagdev.template_jetpackcompose.core.presentation.companents.DrawerContent
 import com.wagdev.template_jetpackcompose.core.presentation.companents.HomeScreen
+import com.wagdev.template_jetpackcompose.core.presentation.companents.ProfessionalCard
 import com.wagdev.template_jetpackcompose.core.presentation.companents.TopAppBarSection
+import com.wagdev.template_jetpackcompose.core.presentation.components.HomeScreenWithTabColumn
 import com.wagdev.template_jetpackcompose.core.presentation.components.HomeScreenWithTopNavigation
 
 
@@ -161,9 +164,9 @@ fun Home(navController: NavController, initialSelectedItem: Int) {
                         when (selectedItem) {
                             0 -> HomeScreen(navController = navController,modifier=Modifier)
                             1 ->  HomeScreenWithTopNavigation()
-                            2 ->  HomeScreen(navController = navController,modifier=Modifier)
-                            3 ->  HomeScreen(navController = navController,modifier=Modifier)
-                            4 ->  HomeScreen(navController = navController,modifier=Modifier)
+                            2 ->  HomeScreenWithTabColumn()
+                            3 ->  ProfessionalCard()
+                            4 ->  BottomSheetScreen()
                             else -> Text("Invalid selection")
                         }
                     }
